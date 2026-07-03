@@ -6,7 +6,7 @@ const HowItWorks = () => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch("./how-it-works.txt")
+    fetch("/how-it-works.txt")
       .then((res) => res.text())
       .then((text) => setContent(text))
       .catch((err) => console.error("Error fetching file:", err));
