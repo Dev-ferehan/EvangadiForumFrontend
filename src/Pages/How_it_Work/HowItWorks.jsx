@@ -19,11 +19,14 @@ const HowItWorks = () => {
         >
           <IoChevronBackCircleSharp />
         </a>
-        <h2 className={classes.title}>How It Works</h2>
+        <h2 className={classes.title}  >How It Works</h2>
       </div>
 
       {content ?
-        <div className={classes.docContent}>{content}</div>
+<div 
+className={classes.docContent} 
+dangerouslySetInnerHTML={{ __html: content }} 
+/>
       : <div className={classes.loading}>Loading documentation...</div>}
     </div>
   );
