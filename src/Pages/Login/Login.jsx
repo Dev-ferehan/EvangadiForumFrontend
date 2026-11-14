@@ -24,7 +24,7 @@ const [type,setType]=useState('password')
       alert("please provied all fields");
     } 
     try {
-      const {data}=await axios.post("/users/login", {
+      const {data}=await axios.post("/api/users/login", {
         "email": emailValue,
         "PASSWORD": passwordValue
       });

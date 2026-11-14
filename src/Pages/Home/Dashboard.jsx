@@ -13,7 +13,7 @@ async function getQuestions() {
 const token = localStorage.getItem("token");
 
   try {
-    const questions = await axiosConfig.get("/questions/", {
+    const questions = await axiosConfig.get("/api/questions/", {
       headers: {
         Authorization: "Bearer " + token,
       },

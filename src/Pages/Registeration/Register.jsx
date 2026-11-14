@@ -47,7 +47,7 @@ function Register() {
       // console.log(lastNameValue);
       // console.log(emailValue);
       // console.log(passwordValue);
-      await axios.post("/users/register", {
+      await axios.post("/api/users/register", {
         userName: userNameValue,
         firstName: firstNameValue,
         lastName: lastNameValue,

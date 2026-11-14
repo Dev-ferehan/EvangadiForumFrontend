@@ -18,7 +18,7 @@ const AskQuestion = () => {
     const descValue = descDom.current.value;
     try {
       await axiosConfig.post(
-        "/questions/postquestion",
+        "/api/questions/postquestion",
         {
           title: titleValue,
           description: descValue,
